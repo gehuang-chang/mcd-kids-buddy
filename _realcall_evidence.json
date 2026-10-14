@@ -1,0 +1,36 @@
+{
+  "generatedAt": "2026-10-14T10:11:51.017Z",
+  "mcpServer": "https://mcp.mcd.cn",
+  "toolsUsed": [
+    "list-nutrition-foods",
+    "campaign-calendar"
+  ],
+  "mealSource": "mcp",
+  "mealCount": 68,
+  "activitySource": "mcp",
+  "activityCount": 4,
+  "sampleMeals": [
+    {
+      "name": "猪柳麦满分",
+      "energyKcal": 308
+    },
+    {
+      "name": "猪柳蛋麦满分",
+      "energyKcal": 387
+    },
+    {
+      "name": "烟肉蛋麦满分",
+      "energyKcal": 260
+    }
+  ],
+  "sampleActivities": [
+    {
+      "date": "2026年10月12日 往期回顾",
+      "title": "乐享90分钟高质量亲子时间"
+    },
+    {
+      "date": "2026年10月14日 今日",
+      "title": "过家家派对上线，快来一起解锁梦想职业"
+    }
+  ]
+}

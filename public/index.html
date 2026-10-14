@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>麦麦带娃官 · 儿童营养餐 & 亲子玩乐雷达</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">🍔 麦麦带娃官</div>
+    <div class="sub">基于麦当劳官方 MCP · 真实数据</div>
+  </header>
+
+  <nav class="tabs">
+    <button class="tab active" data-tab="meal">🍱 儿童营养餐推荐</button>
+    <button class="tab" data-tab="play">🎁 当期亲子玩乐雷达</button>
+  </nav>
+
+  <!-- 模块1 -->
+  <section id="tab-meal" class="panel active">
+    <div class="form">
+      <label>孩子年龄
+        <input type="number" id="age" value="5" min="1" max="14" />
+      </label>
+      <label>场景
+        <select id="scene">
+          <option value="加餐">加餐（低热量优先）</option>
+          <option value="正餐" selected>正餐（均衡优先）</option>
+          <option value="奖励">奖励（小份优先）</option>
+        </select>
+      </label>
+      <button id="btn-meal" class="primary">帮我推荐</button>
+    </div>
+    <div id="meal-tip" class="tip"></div>
+    <div id="meal-list" class="cards"></div>
+  </section>
+
+  <!-- 模块2 -->
+  <section id="tab-play" class="panel">
+    <div class="form">
+      <button id="btn-play" class="primary">刷新当期活动</button>
+    </div>
+    <div id="play-tip" class="tip"></div>
+    <div id="play-list" class="cards play"></div>
+  </section>
+
+  <footer class="foot">
+    数据来源：麦当劳官方 MCP（list-nutrition-foods / campaign-calendar）。营养提示非医疗建议。
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
